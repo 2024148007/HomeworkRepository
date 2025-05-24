@@ -60,7 +60,10 @@
             })
 
         sortBy.onchange = sortMovies;
-        searchBar.onsubmit = filterResults;
+        document.querySelector("#search form").onsubmit = (e) => {
+            e.preventDefault();
+            filterResults();
+        };
         searchButton.onclick = filterResults;
         searchBar.onkeydown = (e) => {
             if (e.key === "Enter") {
