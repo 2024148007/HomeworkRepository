@@ -48,7 +48,7 @@
             let movieArr;
             let movieCount = 0;
 
-            fetch("product.json")
+            fetch("./product.json")
                 .then((response) => {
                 if (response.ok) {return response;}
                 else throw Error("Error in Request");
@@ -100,7 +100,7 @@
             movieImg1.onmouseover = displayStory;
             movieImg1.onmouseout = hideStory;
             movieImg1.innerHTML =
-                `<img src="posters/${movie1.poster-location}" alt="${movie1.title} Poster" width="100%" height="100%">
+                `<img src="posters/${movie1["poster-location"]}" alt="${movie1.title} Poster" width="100%" height="100%">
                         <p class="Story">Story: <br>${movie1.overview}</p>`;
 
             let movieFoot1 = document.createElement("footer");
@@ -118,7 +118,7 @@
                 movieImg2.onmouseover = displayStory;
                 movieImg2.onmouseout = hideStory;
                 movieImg2.innerHTML =
-                    `<img src="posters/${movie2.poster-location}" alt="${movie2.title} Poster" width="100%" height="100%">
+                    `<img src="posters/${movie2["poster-location"]}" alt="${movie2.title} Poster" width="100%" height="100%">
                         <p class="Story">Story: <br>${movie2.overview}</p>`;
 
                 let movieFoot2 = document.createElement("footer");
