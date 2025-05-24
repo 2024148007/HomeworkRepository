@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>SignUp</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <h1>
+        Welcome to INTERNET-PROGRAMMING MOVIE SITE
+    </h1>
+    <div class="signup-wrapper">
+        <h2>Sign Up</h2>
+        
+        <form action="login.html" method="post" id="signup-form">
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="name" required autocomplete="name">
+    
+            <label for="birth">Birth :</label>
+            <input type="date" id="birth" name="birth" required>
+    
+            <label>Gender :</label>
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+    
+            <label for="grade">Grade :</label>
+            <select id="grade" name="grade" required>
+                <option value="">Choose your grade</option>
+                <option value="1">Freshman</option>
+                <option value="2">Sophomore</option>
+                <option value="3">Junior</option>
+                <option value="4">Senior</option>
+            </select>
+    
+            <label for="userid">ID :</label>
+            <input type="text" id="userid" name="userid" required autocomplete="username">
+    
+            <label for="password">Password :</label>
+            <input type="password" id="password" name="password" required autocomplete="new-password">
+    
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required placeholder="email@example.com">
+    
+            <label for="question">Security Question :</label>
+            <select id="question" name="question" required>
+                <option value="">Choose a question</option>
+                <option value="q1">Where are you born?</option>
+                <option value="q2">What is your favorite food?</option>
+                <option value="q3">What is your favorite music?</option>
+            </select>
+    
+            <label for="answer">Answer :</label>
+            <input type="text" id="answer" name="answer" required>
+    
+            <div class="button-wrapper">
+                <input type="submit" value="Sign up" class="btn-signup">
+                <input type="button" value="Cancel" class="btn-cancel" onclick="history.back()">
+            </div>
+
+            <div class="have-account">
+                <a class="have-account" href="login.html">Already have an account? Sign in</a>
+                <div></div>
+                <a class="link" href="index.html" target="_self">Back to Home</a>
+
+            </div>
+        </form>
+    </div>
+    
+</body>

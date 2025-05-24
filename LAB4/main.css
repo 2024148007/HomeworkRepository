@@ -1,0 +1,218 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Base */
+body {
+    font-size: 14px;
+    background-color: #f8f9fa;
+    color: #1e2b40;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 28px;
+    color: #343a40;
+}
+
+/* Wrapper */
+.login-wrapper,
+.signup-wrapper {
+    width: 90%;
+    max-width: 400px;
+    padding: 30px 40px;
+    margin: 40px auto;
+    border: 1px solid #1e2b40;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+.login-wrapper h2,
+.signup-wrapper h2 {
+    font-size: 24px;
+    color: #407ec9;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="date"],
+form select {
+    width: 100%;
+    height: 36px;
+    margin: 6px 0 16px 0;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #e9edf4;
+}
+
+form input[type="radio"] {
+    margin-right: 6px;
+    margin-left: 12px;
+}
+
+form input::placeholder {
+    color: #6c757d;
+}
+
+/* Buttons */
+.btn-signup,
+.btn-cancel,
+form input[type="submit"],
+form input[type="button"] {
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn-signup,
+form input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.btn-cancel {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Link styling */
+.link,
+.have-account {
+    font-size: 14px;
+    color: #407ec9;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+}
+.link:hover,
+.have-account:hover {
+    text-decoration: underline;
+}
+
+.link-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.separator {
+    height: 16px;
+    width: 1px;
+    background-color: #cccccc;
+}
+
+/* Movie Page (index.html) */
+.homePage {
+    padding: 20px;
+    background-color: #f1f3f5;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #1e2b40;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.curLoc {
+    font-weight: bold;
+    color: #407ec9;
+}
+
+#search {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+#search input[type="text"] {
+    width: 250px;
+    padding: 8px;
+    margin: 5px;
+}
+#search input[type="button"] {
+    padding: 8px 16px;
+    background-color: #407ec9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#sort-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.MovieSubSet {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Movie {
+    width: 45%;
+    min-width: 250px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.MovieImg {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.MovieImg img {
+    width: 100%;
+    display: block;
+}
+.Story {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(30,43,64,0.8);
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.MovieImg:hover .Story {
+    opacity: 1;
+}
+
+footer {
+    font-size: 14px;
+    padding: 10px;
+    background-color: #f8f9fa;
+}
