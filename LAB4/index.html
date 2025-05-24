@@ -107,7 +107,7 @@
                         <p class="Story">Story: <br>${movie1.overview}</p>`;
 
             let movieFoot1 = document.createElement("footer");
-            movieFoot1.innerHTML = `Title : ${movie1.title} <br>📅 ${movie1.release-date} <br>⭐️ ${movie1.rating}`;
+            movieFoot1.innerHTML = `Title : ${movie1.title} <br>📅 ${movie1["release-date"]} <br>⭐️ ${movie1.rating}`;
 
             movieInfo1.appendChild(movieImg1); movieInfo1.appendChild(movieFoot1);
 
@@ -125,7 +125,7 @@
                         <p class="Story">Story: <br>${movie2.overview}</p>`;
 
                 let movieFoot2 = document.createElement("footer");
-                movieFoot2.innerHTML = `Title : ${movie2.title} <br>📅 ${movie2.release-date} <br>⭐️ ${movie2.rating}`;
+                movieFoot2.innerHTML = `Title : ${movie2.title} <br>📅 ${movie2["release-date"]} <br>⭐️ ${movie2.rating}`;
 
                 movieInfo2.appendChild(movieImg2); movieInfo2.appendChild(movieFoot2);
             }
