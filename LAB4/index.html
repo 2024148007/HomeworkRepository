@@ -196,14 +196,14 @@
 
         // comparing functions
         function compareDateDesc(movie1, movie2) {
-            const d1 = new Date(a["release-date"]);
-            const d2 = new Date(b["release-date"]);
+            const d1 = new Date(movie1["release-date"]);
+            const d2 = new Date(movie2["release-date"]);
             return d2 - d1;
         }
 
         function compareDateAsc(movie1, movie2) {
-            const d1 = new Date(a["release-date"]);
-            const d2 = new Date(b["release-date"]);
+            const d1 = new Date(movie1["release-date"]);
+            const d2 = new Date(movie2["release-date"]);
             return d1 - d2;
         }
 
