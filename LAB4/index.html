@@ -169,12 +169,26 @@
 
         function sortMovies() {
             let sortKey = sortBy.value;
-            emptyMovies();
-            if (sortKey == "Alphabetical Order") {movieArr.sort(compareTitle);}
-            else if (sortKey == "Most Recent") {movieArr.sort(compareDate); movieArr.reverse();}
-            else if (sortKey == "Oldest") {movieArr.sort(compareDate);}
-            else if (sortKey == "Highest Rating") {movieArr.sort(compareRating);}
-            addMovie(); addMovie();
+                emptyMovies();
+                    switch (sortKey) {
+                    case "Alphabetical Order":
+                movieArr.sort(compareTitle);
+                    break;
+                    case "Most Recent":
+                movieArr.sort(compareDateDesc);
+                    break;
+                    case "Oldest":
+                movieArr.sort(compareDateAsc);
+                    break;
+                    case "Highest Rating":
+                movieArr.sort(compareRating);
+                    break;
+                default:
+                    break;
+            }
+
+            addMovie();
+            addMovie();
         }
 
         // comparing functions
